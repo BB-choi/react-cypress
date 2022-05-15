@@ -8,6 +8,7 @@ Cypress를 이용한 React E2E테스트
 
 <p align="center">
   <img src="./images/counter_app.jpg" alt="프로젝트 미리보기">
+  <a href="https://bb-choi.github.io/react-cypress/" target="_blank">🔗링크</a>
 </p>
 
 E2E 도구인 Cypress로 테스트를 수행해 보기 위한 간단한 Counter App
