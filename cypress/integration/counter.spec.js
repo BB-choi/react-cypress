@@ -53,6 +53,28 @@ describe("React Counter App 테스트", () => {
     cy.get("#count-value").invoke("text").should("eq", "5");
   });
 
+  it("최소 범위를 넘어 클릭이벤트가 발생하면 alert이 표시된다", () => {
+    cy.window().then((window) => {
+      cy.stub(window, "alert");
+    });
+    cy.get("#decrease-button").click();
+    cy.window().its("alert").should("be.called");
+  });
+
+  it("최소 범위를 넘어 클릭이벤트가 발생하면 alert이 표시된다", () => {
+    // alert메시지를 확인해보기
+    cy.window().then((window) => {
+      cy.stub(window, "alert").as("alert");
+    });
+    for (let i = 0; i < 6; i++) {
+      cy.get("#increase-button").click();
+    }
+    cy.get("@alert").should(
+      "have.been.calledOnceWith",
+      "더 이상 증가시킬 수 없습니다."
+    );
+  });
+
   it("Reset 버튼을 클릭하면 Count가 0으로 초기화된다.", () => {
     for (let i = 0; i < 3; i++) {
       cy.get("#increase-button").click();
