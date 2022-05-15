@@ -36,7 +36,11 @@ const Counter = () => {
         >
           -
         </button>
-        <button id="reset" className="button" onClick={onClickResetButton}>
+        <button
+          id="reset-button"
+          className="button"
+          onClick={onClickResetButton}
+        >
           Reset
         </button>
         <button
