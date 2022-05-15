@@ -1,0 +1,32 @@
+#count-value {
+  font-size: 9rem;
+  font-weight: 700;
+}
+
+.button {
+  width: 8rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #d4d4d4;
+  box-shadow: 0.5rem 0.5rem 0.5rem #b1b1b1;
+  cursor: pointer;
+
+  border-radius: 1rem;
+  border: 0;
+}
+
+.button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.button:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.2rem;
+}
