@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-cypress/static/css/main.04b111b1.css",
+    "main.js": "/react-cypress/static/js/main.cb2e9677.js",
+    "index.html": "/react-cypress/index.html",
+    "main.04b111b1.css.map": "/react-cypress/static/css/main.04b111b1.css.map",
+    "main.cb2e9677.js.map": "/react-cypress/static/js/main.cb2e9677.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04b111b1.css",
+    "static/js/main.cb2e9677.js"
+  ]
+}
